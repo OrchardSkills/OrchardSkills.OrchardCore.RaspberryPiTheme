@@ -33,7 +33,12 @@ z-index: 1030;">
         <div class="container">
             <div class="logo">
                 <a class="navbar-brand" href="~/#"><img width="40px" height="40px"
-                        src="/MaterialDesignTheme/icons/icon-90x90.png" alt="Logo">@Site.SiteName</a>
+                        src="/RaspberryPiTheme/icons/icon-90x90.png" alt="Logo">@Site.SiteName</a>
+                <!-- Toggle button -->
+                <label id="switch" class="switch navbar-item">
+                    <input type="checkbox" onchange="toggleTheme()" id="slider" aria-label="Theme Switch">
+                    <span class="slider round"></span>
+                </label>
             </div>
 
             <button class="navbar-toggler nav-tgl" type="button" data-mdb-toggle="collapse"
@@ -66,5 +71,32 @@ z-index: 1030;">
     </footer>
     }
     <resources type="FootScript" />
+
+      <script>
+
+        // function to set a given theme/color-scheme
+        function setTheme(themeName) {
+            localStorage.setItem('theme', themeName);
+            document.documentElement.className = themeName;
+        }
+        // function to toggle between light and dark theme
+        function toggleTheme() {
+            if (localStorage.getItem('theme') === 'theme-light') {
+                setTheme('theme-dark');
+            } else {
+                setTheme('theme-light');
+            }
+        }
+        // Immediately invoked function to set the theme on initial load
+        (function () {
+            if (localStorage.getItem('theme') === 'theme-light') {
+                setTheme('theme-light');
+                document.getElementById('slider').checked = false;
+            } else {
+                setTheme('theme-dark');
+                document.getElementById('slider').checked = true;
+            }
+        })();
+    </script>
 </body>
 </html>
