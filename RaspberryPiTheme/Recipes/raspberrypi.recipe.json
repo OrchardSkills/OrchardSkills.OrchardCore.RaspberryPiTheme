@@ -1,0 +1,51 @@
+{
+  "name": "SaaS",
+  "displayName": "Raspberry Pi Theme",
+  "description": "A theme designed for the Raspberry Pi.",
+  "author": "Orchard Skills",
+  "website": "https://orchardskills.com",
+  "version": "1.0.0-rc2",
+  "issetuprecipe": true,
+  "categories": [ "default" ],
+  "tags": [ "developer", "default" ],
+  "steps": [
+    {
+      "name": "feature",
+      "enable": [
+        // SaaS
+        "OrchardCore.Admin",
+        "OrchardCore.Diagnostics",
+        "OrchardCore.DynamicCache",
+        "OrchardCore.HomeRoute",
+        "OrchardCore.Localization",
+        "OrchardCore.Features",
+        "OrchardCore.Navigation",
+        "OrchardCore.Recipes",
+        "OrchardCore.Resources",
+        "OrchardCore.Roles",
+        "OrchardCore.Settings",
+        "OrchardCore.Tenants",
+        "OrchardCore.Themes",
+        "OrchardCore.Users",
+
+        // Themes
+        "RaspberryPiTheme",
+        "TheAdmin",
+        "SafeMode"
+      ]
+    },
+    {
+      "name": "themes",
+      "admin": "TheAdmin",
+      "site": "RaspberryPiTheme"
+    },
+    {
+      "name": "settings",
+      "HomeRoute": {
+        "Action": "Index",
+        "Controller": "Home",
+        "Area": "RaspberryPiTheme"
+      }
+    }
+  ]
+}
