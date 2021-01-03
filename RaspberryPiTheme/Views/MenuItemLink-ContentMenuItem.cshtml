@@ -9,6 +9,8 @@
     TagBuilder tag = Tag(Model, "a");
     tag.Attributes["href"] = linkUrl;
     tag.InnerHtml.Append(menuItemPart.Name);
+    tag.AddCssClass("nav-link dropdown-toggle bottom-line-hover");
+    tag.Attributes.Add("data-mdb-toggle","dropdown");
 
     if (Model.Level == 0 && Model.HasItems)
     {
