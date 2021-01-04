@@ -225,6 +225,11 @@ select:-webkit-autofill:active {
 .logo-color:hover {
   background-color: #4c5041 !important;
 }
+
+.form-horizontal .form-group {
+  margin-bottom: 1rem;
+}
+
 header.masthead {
   margin-bottom: 50px;
   background: no-repeat center center;
