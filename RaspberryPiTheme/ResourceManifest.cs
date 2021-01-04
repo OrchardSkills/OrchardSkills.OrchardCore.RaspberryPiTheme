@@ -20,15 +20,15 @@ namespace OrchardCore.Themes.RaspberryPiTheme
 
             manifest
                 .DefineStyle("RaspberryPiTheme-vendor-font-awesome")
-                .SetUrl("https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.14.0/css/all.min.css")
+                .SetUrl("https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.1/css/all.min.css")
                 .SetCdnIntegrity("sha256-FMvZuGapsJLjouA6k7Eo2lusoAX9i0ShlWFG6qt7SLc=")
-                .SetVersion("5.14.0");
+                .SetVersion("5.15.1");
 
             manifest
                 .DefineScript("RaspberryPiTheme-vendor-font-awesome")
-                .SetCdn("https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.14.0/js/fontawesome.min.js")
+                .SetCdn("https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.1/js/fontawesome.min.js")
                 .SetCdnIntegrity("sha256-dNZKI9qQEpJG03MLdR2Rg9Dva1o+50fN3zmlDP+3I+Y=")
-                .SetVersion("5.14.0");
+                .SetVersion("5.15.1");
         }
     }
 }
