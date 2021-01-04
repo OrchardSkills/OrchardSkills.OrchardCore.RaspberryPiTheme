@@ -27,6 +27,9 @@
         "OrchardCore.Tenants",
         "OrchardCore.Themes",
         "OrchardCore.Users",
+        "OrchardCore.Users.ChangeEmail",
+        "OrchardCore.Users.Registration",
+        "OrchardCore.Users.ResetPassword",
 
         // Themes
         "RaspberryPiTheme",
@@ -45,6 +48,30 @@
         "Action": "Index",
         "Controller": "Home",
         "Area": "RaspberryPiTheme"
+      },
+      "ChangeEmailSettings": {
+        "AllowChangeEmail": true
+      },
+      "LoginSettings": {
+        "UseSiteTheme": true,
+        "UseExternalProviderIfOnlyOneDefined": false,
+        "DisableLocalLogin": false,
+        "UseScriptToSyncRoles": false,
+        "SyncRolesScript": null
+      },
+      "RegistrationSettings": {
+        "UsersCanRegister": 1,
+        "UsersMustValidateEmail": true,
+        "UseSiteTheme": true,
+        "NoPasswordForExternalUsers": false,
+        "NoUsernameForExternalUsers": false,
+        "NoEmailForExternalUsers": false,
+        "UseScriptToGenerateUsername": false,
+        "GenerateUsernameScript": null
+      },
+      "ResetPasswordSettings": {
+        "AllowResetPassword": true,
+        "UseSiteTheme": true
       }
     }
   ]
