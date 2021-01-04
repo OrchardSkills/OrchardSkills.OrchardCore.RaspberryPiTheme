@@ -2,7 +2,7 @@ using OrchardCore.DisplayManagement.Manifest;
 using OrchardCore.Modules.Manifest;
 
 [assembly: Theme(
-    Name = "The Raspberry P Theme",
+    Name = "The Raspberry Pi Theme",
     Author = "Orchard Skills",
     Website = "https://orchardskills.com",
     Version = ManifestConstants.OrchardCoreVersion,
